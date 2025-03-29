@@ -42,31 +42,4 @@ const DarkMode = () => {
   );
 };
 
-// Optional: Create an Error Boundary component
-class ErrorBoundary extends React.Component {
-  state = { hasError: false };
-
-  static getDerivedStateFromError(error) {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error, errorInfo) {
-    console.error('Error caught by boundary:', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <div className="text-red-500">Theme toggle failed</div>;
-    }
-    return this.props.children;
-  }
-}
-
-// Wrap your component with the boundary
-export default function SafeDarkMode() {
-  return (
-    <ErrorBoundary>
-      <DarkMode />
-    </ErrorBoundary>
-  );
-}
+export default DarkMode

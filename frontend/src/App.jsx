@@ -1,10 +1,13 @@
 import React from "react"
-import Header from "./component/Header"
+import Navbar from "./component/Navbar"
+import Carousal from "./component/Carousal"
 
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Navbar />
+      <Carousal />
+
     </div>
   )
 }

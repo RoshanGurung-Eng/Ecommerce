@@ -302,3 +302,6 @@ ESEWA_MERCHANT_ID = 'EPAYTEST'
 ESEWA_SECRET_KEY = 'hwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ=='
 ESEWA_SUCCESS_URL = 'http://127.0.0.1:8000/esewa/success'
 ESEWA_FAILED_URL = 'http://127.0.0.1:8000/esewa/failed'
+#For media 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'

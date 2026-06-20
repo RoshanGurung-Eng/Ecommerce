@@ -4,3 +4,4 @@ from django.test import TestCase
 print(2-2)
 print(None)
 print("Test")
+print("None")
